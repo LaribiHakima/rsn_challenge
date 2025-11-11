@@ -2,10 +2,11 @@ This repository contains the code for the **RSN Hackathon Challenge: _Synthetic 
 
 
 ## Files
-- **`homr.py`** — code used to train the model and optimize its hyperparameters.  
-- **`rf_homr_best_hps_synthetic.json`** — stores the hyperparameters that produced the best results.  
-- **`random_forest_synthetic.joblib`** — pretrained model generated using the best hyperparameters.
-
+- **`homr.py`** — code used to train the model on the synthetic dataset and optimize its hyperparameters.  
+- **`rf_homr_best_hps_synthetic.json`** — stores the hyperparameters that produced the best results when training on the synthetic dataset.  
+- **`random_forest_synthetic.joblib`** — pretrained model generated using the best hyperparameters when training on the synthetic dataset.
+- **`rf_homr_best_hps_original.json`** — stores the hyperparameters that produced the best results when training on the original dataset.
+- **`random_forest_original.joblib`** — pretrained model generated using the best hyperparameters when training on the original dataset.
 
 ## Dataset
 The synthetic dataset can be:
@@ -21,4 +22,5 @@ The synthetic dataset can be:
 2. **Load the pretrained model for post-analyses**
    ```python
    import joblib
-   rf = joblib.load("random_forest_synthetic.joblib")
+   rf_synthetic = joblib.load("random_forest_synthetic.joblib")
+   rf_original = joblib.load("random_forest_original.joblib")
