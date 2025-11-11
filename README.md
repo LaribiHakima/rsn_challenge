@@ -10,7 +10,7 @@ This repository contains the code for the **RSN Hackathon Challenge: _Synthetic 
 ## Dataset
 The synthetic dataset can be:
 - Automatically installed from the corresponding section in `homr.py`, **or**
-- Manually downloaded from **[Zenodo](https://zenodo.org/records/12954673)**.
+- Manually downloaded from **[zenodo.org/records/12954673](https://zenodo.org/records/12954673)**.
 
 
 ## Usage
