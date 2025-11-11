@@ -43,11 +43,10 @@ def get_cols(df: pd.DataFrame) -> Tuple[List[str], List[str], List[str], str]:
 # Install the data
 # Windows =>
 # import urllib.request
-#
 # url = "https://zenodo.org/records/12954673/files/dataset.csv"
 # output_path = "dataset.csv"
-#
 # urllib.request.urlretrieve(url, output_path)
+
 # Linux =>
 # subprocess.run(" wget https://zenodo.org/records/12954673/files/dataset.csv", shell=True, check=True)
 
@@ -112,7 +111,7 @@ y_pred_proba = best_model.predict_proba(x_test[feature_cols])[:, 1]
 # Compute AUC
 test_auc = roc_auc_score(y_test, y_pred_proba)
 
-print(f"\n✅ Test AUC with best model: {test_auc:.4f}")
+print(f"Test AUC with best model: {test_auc:.4f}")
 
 # Save the trained model
 joblib.dump(best_model, "random_forest_synthetic.joblib")
