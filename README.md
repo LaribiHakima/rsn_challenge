@@ -2,10 +2,13 @@ This repository contains the code for the **RSN Hackathon Challenge: _Synthetic 
 
 
 ## Files
-- **`homr.py`** — code used to train the model on the synthetic dataset and optimize its hyperparameters.  
+- **`homr.py`** — code used to train the model on the synthetic dataset and optimize its hyperparameters.
 - **`rf_homr_best_hps_synthetic.json`** — stores the hyperparameters that produced the best results when training on the synthetic dataset.  
-- **`random_forest_synthetic.joblib`** — pretrained model generated using the best hyperparameters when training on the synthetic dataset.
 - **`rf_homr_best_hps_original.json`** — stores the hyperparameters that produced the best results when training on the original dataset.
+
+## Pretrained models
+Pretrained models can be downloaded from [https://drive.google.com/drive/u/4/folders/13r3tEXg5SfyesCLX0w76K5fJ7MHmbJes](https://drive.google.com/drive/u/4/folders/13r3tEXg5SfyesCLX0w76K5fJ7MHmbJes)
+- **`random_forest_synthetic.joblib`** — pretrained model generated using the best hyperparameters when training on the synthetic dataset.
 - **`random_forest_original.joblib`** — pretrained model generated using the best hyperparameters when training on the original dataset.
 
 ## Dataset
